@@ -1,0 +1,94 @@
+*{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: monospace;
+}
+  /* 
+      >background-size:cover will allow all the image to be displayed in the div
+      >vh stands for viewport height and vw stands for viewport width so it's useful to set the image perfectly fit in the screen according to screen: 1vh=1% of viewport and same to vw.
+      >If background-position: center is not used then the image will wrap below it's original size
+      but if used then the image will be perfectly centered in any screen ratio;
+      
+      >there are many ways of centering the login form using margin, padding but the best way is to use flex property
+*/
+.main_container{
+      background-image: url(https://miro.medium.com/max/10368/0*oKTwf_eWha_cS00V);
+      background-size:cover;
+      height: 100vh;
+      width:100vw;      
+      background-position:center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.login_container{
+      background-color: hsla(220, 14%, 9%,0.7);    
+      padding:30px 20px;
+      /* text-align: center; */
+      width: 50%;
+      min-width:300px;
+      max-width: 500px;
+}
+
+.login_title{
+      color: white;
+      text-align: center;
+      /* margin:0; */
+      margin-bottom: 1em;
+      font-size: 3em;
+      font-weight: bold;
+}
+
+.input_group{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+     
+}
+
+.input_group label{
+      font-size: 1.5em;
+      color: white;
+      margin-bottom:5px;
+}
+
+.input_group input{
+      /*
+      background: none;
+      border:none;
+      outline: none;
+       The above three properties are used to remove the default property of input and outline is seen when clicked on the input field which is also removed from default
+      */
+      font-size:1.5em;
+      padding:.2em .5em;
+      background-color: hsla(33, 8%, 46%,0.5);
+      border:2px solid hsl(33, 8%, 46%);
+      outline:none;
+      border-radius:5px;
+      color:white;
+}
+
+.input_group input:focus{
+      border:2px solid hsl(33, 8%, 76%);     
+}
+
+.submit_btn{
+      background: hsla(33, 8%, 46%,0.1);
+      border: 2px solid hsla(33, 8%, 76%,0.5);
+      width:100%;
+      font-size:1.7em;
+      color:white;
+      cursor: pointer;
+      margin-top:20px;
+      padding:10px 30px;
+}
+
+.submit_btn:hover{
+      background: hsla(33, 8%, 76%,0.5);
+}
+
+.submit_btn:focus{
+      background: hsla(33, 8%, 76%,0.7);
+}
