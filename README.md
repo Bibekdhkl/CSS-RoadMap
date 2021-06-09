@@ -18,8 +18,8 @@
 
 ### Projects
 1.Easy
-- Transparent Login Form 
-- Responsive Video Background 
+- [Transparent Login Form] (https://bibekdhkl.github.io/CSS-RoadMap/TransparentLoginForm/index.html)
+- [Responsive Video Background] (https://bibekdhkl.github.io/CSS-RoadMap/ResponsiveVideoBg/index.html)
 
 2.Medium
 - CSS Only Tooltips 
