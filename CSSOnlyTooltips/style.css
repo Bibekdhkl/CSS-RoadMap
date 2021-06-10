@@ -1,0 +1,45 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: rgba(39, 255, 46, 0.925);
+
+}
+
+.heading{
+      text-align: center;
+      font-size: 2em;
+      color: rgb(9, 15, 117);
+      background-color: rgba(29, 32, 103, 0.408);
+}
+
+
+.screen_container{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top:20vh;
+}
+
+.image_1,.image_2,.image_3{
+      height: 20em;
+      width: 20em;
+      background-size: cover;
+      background-position: center   ;
+      border-radius: 50%;
+      border:3px solid red;  
+}
+
+.image_1{   
+      background-image: url('pete.png');
+}
+
+.image_2{
+      background-image: url("trauman.png");
+}
+
+.image_3{
+      background-image: url("corlene.png");
+}
+
+/* Tooltip properties are yet to be added :/ */
