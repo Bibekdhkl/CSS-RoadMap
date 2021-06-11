@@ -22,7 +22,7 @@
 - [Responsive Video Background](https://bibekdhkl.github.io/CSS-RoadMap/ResponsiveVideoBg/index.html)
 
 2.Medium
-- CSS Only Tooltips 
+- [CSS Only Tooltips](https://bibekdhkl.github.io/CSS-RoadMap/CSSOnlyTooltips/index.html)
 - CSS Emoji Art 
 - CSS Face Art 
 - Advanced Hover Effects 
