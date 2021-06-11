@@ -2,43 +2,99 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      background-color: rgba(39, 255, 46, 0.925);
+      background-color: rgb(231, 235, 238);
 
 }
 
 .heading{
       text-align: center;
       font-size: 2em;
-      color: rgb(9, 15, 117);
-      background-color: rgba(29, 32, 103, 0.408);
+      color: rgb(26, 26, 186);
+      background-color: rgba(12, 98, 29, 0.83);
 }
 
 
 .screen_container{
+      margin:0 8em;
       display: flex;
       justify-content: space-around;
-      align-items: center;
       margin-top:20vh;
+}
+
+.image{
+      position: relative;
+      /* We need to define a separate container for each individual image so that the tooltip do not wrap around other div */
+}
+
+.pic::before,.pic::after{
+      --scale : 0;
+      --tooltip-color: rgba(0, 0, 0, 0.864);
+      --triangle-size:.6em;
+      /* we are defining a variable --scale here and here scale is used to enlarge the content so initially the scale value is 0 so it's not visible but once it is hovered then it's value chanages to 1 which is assigned below so the tooltip content becomes visible*/
+
+      /* background: rgba(11, 107, 167, 0.823); */
+      font-size: 2rem;
+      text-align: center;
+      
+      position: absolute;
+      top:-.5em;
+      left: 50%;     
+      /* Absolute properties is used so as too make the tooltip appear in the desired position as expected */
+
+      border-radius:.5em;
+      transform: translateX(-50%) translateY(var(--translate-y,0)) scale(var(--scale));
+      /* At first left 50% moves the image half from it's initial position th en the tooltip starts from center of the image but we want our tooltip center lie at the center of image so we used translateX(50%) and then translateY(-100%) is used to move the tooltip whole div upward of it's full height  and here scale enlarges the image*/
+
+      transition: 1s transform;
+      transform-origin: bottom center;
+      /* bottom center results the tooltip to fade out as expected */
+}
+
+.pic::before{
+      --translate-y:calc(-100% );
+     max-width: 100%;
+     height: auto;
+     padding: .5rem;
+     width: max-content;  
+     color: white;
+     content: attr(datatooltip);
+     background: var(--tooltip-color);
+}
+.pic:hover::before,     
+.pic:hover::after{
+      --scale :1;       
+}
+
+.pic::after{
+      --translate-y:calc(-1 * var(var(--triangle-size)));
+      transform-origin: top center;
+      border-radius: 0;
+      content: '';
+      border: var(--triangle-size) solid transparent;
+      border-top-color:var(--tooltip-color);
 }
 
 .image_1,.image_2,.image_3{
       height: 20em;
       width: 20em;
       background-size: cover;
-      background-position: center   ;
+      background-position: center;
       border-radius: 50%;
-      border:3px solid red;  
+      border:3px solid red;
 }
 
 .image_1{   
+
       background-image: url('pete.png');
 }
 
 .image_2{
+
       background-image: url("trauman.png");
 }
 
 .image_3{
+
       background-image: url("corlene.png");
 }
 
