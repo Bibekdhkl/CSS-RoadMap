@@ -1,0 +1,73 @@
+*{
+      box-sizing: border-box;
+}
+
+body{
+      background-color: hsl(0, 7%, 16%);
+}
+
+h1{
+      font-size: 3em;
+      color: beige;
+      border: .5em solid hsl(0, 64%, 31%);
+      border-radius: 50%;
+      text-align: center;
+}
+
+.emoji{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.head{
+      --emoji-size: 30em;
+      position: relative;
+      /* All the parts inside the head are absolute so we need to make head as relative so as to align the parts as per our preferences */
+      background-color: yellow;
+      height: var(--emoji-size);
+      width: var(--emoji-size);
+      border-radius: 50%;
+      overflow: hidden;
+      /* Everything that comes outside of the head will be invisible */
+}     
+
+.eyes{
+      position: absolute;
+      top:calc(var(--emoji-size)*.2);
+      left:calc(var(--emoji-size)*.5);
+      transform:translateX(calc(var(--emoji-size))*.5);
+      left:50%;
+}
+
+.eye{
+      position: absolute;
+      background-color: black;
+      height: calc(var(--emoji-size)*.15);      
+      width: calc(var(--emoji-size)*.075);
+      border-radius: 50%;
+}
+
+.eye_right{
+      right:calc(var(--emoji-size)*-.2);
+}
+
+.eye_left{
+      left: calc(var(--emoji-size)*-.2);
+}
+
+.mouth{
+      --mouth-height:calc(var(--emoji-size)*.3);
+      position: absolute;
+      height: var(--mouth-height);
+      width: calc(var(--emoji-size)*.7);
+      background-color: black;
+
+      bottom:calc(var(--emoji-size)*.15);
+      left:calc(var(--emoji-size)*.5);
+      transform: translateX(-50%);
+
+      /* Bottom keeps the mouth-smile 15% upward while left shifts 50%to side and then -50% shifts negative x direction to the left of the mouth so as to fit it at perfect dead center */
+
+      border-radius: 5% 5% var(--mouth-height) var(--mouth-height);
+}
