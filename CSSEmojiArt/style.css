@@ -73,6 +73,7 @@ h1{
       transform: translateX(-50%);
       background-color: black;
       /* Bottom keeps the mouth-smile 15% upward while left shifts 50%to side and then -50% shifts negative x direction to the left of the mouth so as to fit it at perfect dead center */
+      overflow: hidden;
 
 }
 
@@ -83,6 +84,29 @@ h1{
       /* Make width exactly double of that of height to form a semi circle on the base*/
       border-radius: 5% 5% var(--mouth-height) var(--mouth-height);
 }
+
+.teeth{
+      height:calc(var(--emoji-size)*.08);
+      width: 100%;
+      background-color: white;
+      border-radius: 5% 5% 20px 20px;
+
+      position: absolute;
+      top: -1px;
+}
+
+.tongue{
+      height: 80%;
+      width: 90%;
+      background-color: brown;
+      left:50%;
+      transform: translateX(-50%);
+      position: absolute;
+      bottom: -30px;
+      border-radius: 50%;
+
+}
+
 
 .wow{
       height: calc(var(--emoji-size)*.3);
