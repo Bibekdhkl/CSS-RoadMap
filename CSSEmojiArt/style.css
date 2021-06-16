@@ -3,25 +3,25 @@
 }
 
 body{
-      background-color: hsl(0, 7%, 16%);
+      background-color: rgb(133, 122, 122);
 }
-
+/* It's better to use px in the places we don't want size to change relatively like heading size also using em in every possible cases is not that good as suggested to me by  */
 h1{
-      font-size: 3em;
-      color: beige;
-      border: .5em solid hsl(0, 64%, 31%);
-      border-radius: 50%;
+      font-size: 40px;
       text-align: center;
-}
+}     
 
 .emoji{
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
+      margin: 10em 0;
 }
 
+
+
 .head{
-      --emoji-size: 30em;
+      --emoji-size: 300px;
       position: relative;
       /* All the parts inside the head are absolute so we need to make head as relative so as to align the parts as per our preferences */
       background-color: yellow;
@@ -32,9 +32,19 @@ h1{
       /* Everything that comes outside of the head will be invisible */
 }     
 
+@media (max-width: 800px) {
+      .emoji {
+        flex-direction: column;
+        margin: 2em 0;
+      }
+      .head{
+            margin: 2em 0;
+      }
+    }
+
 .eyes{
       position: absolute;
-      top:calc(var(--emoji-size)*.2);
+      top:calc(var(--emoji-size)*.25);
       left:calc(var(--emoji-size)*.5);
       transform:translateX(calc(var(--emoji-size))*.5);
       left:50%;
@@ -57,17 +67,25 @@ h1{
 }
 
 .mouth{
-      --mouth-height:calc(var(--emoji-size)*.3);
       position: absolute;
-      height: var(--mouth-height);
-      width: calc(var(--emoji-size)*.7);
-      background-color: black;
-
       bottom:calc(var(--emoji-size)*.15);
       left:calc(var(--emoji-size)*.5);
       transform: translateX(-50%);
-
+      background-color: black;
       /* Bottom keeps the mouth-smile 15% upward while left shifts 50%to side and then -50% shifts negative x direction to the left of the mouth so as to fit it at perfect dead center */
 
+}
+
+.smile{
+      --mouth-height:calc(var(--emoji-size)*.3);
+      height: var(--mouth-height);
+      width: calc(var(--emoji-size)*.6);
+      /* Make width exactly double of that of height to form a semi circle on the base*/
       border-radius: 5% 5% var(--mouth-height) var(--mouth-height);
+}
+
+.wow{
+      height: calc(var(--emoji-size)*.3);
+      width:calc(var(--emoji-size)*.25);  
+      border-radius:  50%;
 }
