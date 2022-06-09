@@ -1,5 +1,11 @@
 # CSS3 RoadMap
 
+## Resources to follow
+1. [Frontend Roadmap](https://bibekdhkl.github.io/CSS-RoadMap/Resources/2021-Frontend-Roadmap-Dark.pdf)
+2. [CSS Cheatsheet](https://devhints.io/css)
+3. [Repository you can take reference](https://github.com/Roopaish/CSS-RoadMap)
+4. [Additional Cheatsheets](https://bibekdhkl.github.io/CSS-RoadMap/Resources)
+
 ## CSS3
 1. Selectors
 2. Cascade
