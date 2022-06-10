@@ -10,8 +10,9 @@
 1. [Selectors](https://bibekdhkl.github.io/CSS-RoadMap/Resources/CSS-Selector-Cheat-Sheet-Light.pdf)
 <br>
 It represents how the html elements can be selected in a css file<br>
-**Examples** 
+
 ```
+Examples
 * {
 
 } Universal Selector: It selects all the elements
@@ -48,12 +49,12 @@ a:nth-child(2n){
 ```
 2. Cascade
 3. [Box Model](https://github.com/Bibekdhkl/CSS-RoadMap/blob/master/Extra/index.html) 
- <br>
- [BoxModel-cheatsheet](https://bibekdhkl.github.io/CSS-RoadMap/Resources/CSS-Box-Model-Cheat-Sheet-Light.pdf)
+ <br>[BoxModel-cheatsheet](https://bibekdhkl.github.io/CSS-RoadMap/Resources/CSS-Box-Model-Cheat-Sheet-Light.pdf)
+ 
 ```
 It is all about arrangement of layouts in web page
 example:
-<h1> Heading</h1>
+<p> Heading</p>
 
 In this above element: 
   Content is Heading 
