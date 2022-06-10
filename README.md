@@ -10,7 +10,7 @@
 1. [Selectors](https://bibekdhkl.github.io/CSS-RoadMap/Resources/CSS-Selector-Cheat-Sheet-Light.pdf)
 <br>
 It represents how the html elements can be selected in a css file<br>
-**Examples**
+**Examples** 
 ```
 * {
 
