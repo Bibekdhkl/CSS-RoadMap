@@ -1,0 +1,53 @@
+*{
+      /* margin:0px; */
+      padding:0;
+      box-sizing: border-box;
+      justify-content: center;
+      font-family: monospace;
+
+}
+
+h1{
+      color: darkblue;
+}
+
+#box-model-container{
+      Margin: 0px 2em;
+}
+
+h2{
+      color:red;
+      font-weight: bold;
+      font-size: 1.9em;
+}
+
+#box-model-design{
+      font-size: 25px;
+      text-align: center;
+      font-weight: 900;
+      font-family: fantasy;
+      
+}
+
+#box-model-design > div{
+      background-color: gainsboro;
+      padding:3em;
+      border: 5px dotted black;
+}
+
+#box-model-design > div > div{
+      background-color: rgb(241, 9, 9);
+      padding:3em;
+
+}
+
+#box-model-design > div > div > div{
+      background-color: gainsboro;
+      padding:3em;
+}
+
+#box-model-design > div > div > div > div{
+      background-color: rgb(81, 221, 16);
+      padding:3em;
+      border: 5px dotted black;
+}
