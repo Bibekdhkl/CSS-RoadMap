@@ -37,6 +37,7 @@ textbox[type="password"]{
 }
 ```
 - __pseudo class__ is also an important concepts to look forward to like:
+
 ```
 a:first-child{
 
@@ -48,33 +49,26 @@ a:nth-child(2n){
 
 ```
 2. Cascade
-3. [Box Model](https://github.com/Bibekdhkl/CSS-RoadMap/blob/master/Extra/index.html) 
- <br>[BoxModel-cheatsheet](https://bibekdhkl.github.io/CSS-RoadMap/Resources/CSS-Box-Model-Cheat-Sheet-Light.pdf)
- 
+3. [Box Model](https://bibekdhkl.github.io/CSS-RoadMap/Extra/index.html)<br>[BoxModel-cheatsheet](https://bibekdhkl.github.io/CSS-RoadMap/Resources/CSS-Box-Model-Cheat-Sheet-Light.pdf)
 ```
 It is all about arrangement of layouts in web page
 example:
 <p> Heading</p>
-
-In this above element: 
-  Content is Heading 
+In this above element:
+  Content is Heading
   And after content there is padding which is transparent gap between content and border
   Then comes border whose thickness can be changed by css shorthand property border
   And finally comes margin which is the gap outside the border to other element
-
 ```
 4. [Specificity](https://blog.webdevsimplified.com/2020-02/css-specificity/)
 ```
 It means what CSS styles will be applied or override in case of multiple styles on same element
-
 In layman's term:
 !important > Inline CSS > #id > .class > element
-
 example:
 h1 {
   color: blue !important;
 }
-
 h1 {
   color: green;
 }
